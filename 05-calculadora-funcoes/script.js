@@ -3,26 +3,37 @@
 */
 
 function somar(a, b) {
-  // TODO
+  return a + b
 }
 
 function subtrair(a, b) {
-  // TODO
+  return a - b
 }
 
 function multiplicar(a, b) {
-  // TODO
+  return a * b
 }
 
 function dividir(a, b) {
-  // TODO:
-  // Trate divisão por zero.
+  if ( a == 0 || b == 0) {
+    return console.log ("Isso é um 0 poxa meu !!!")
+  }
+  else {
+    return a / b
+  }
 }
 
 function calcular(a, b, operacao) {
-  // TODO:
-  // Escolha a função correta conforme a operação.
-  // Trate também uma operação desconhecida.
+  if ( operacao === 'soma' ) {
+    return somar(a,b)
+  } else if ( operacao === 'subitrair' ) {
+    return subtrair(a,b) 
+  } else if ( operacao === 'multiplicar' ) {
+    return multiplicar(a,b)
+  } else if ( operacao === 'dividir' ) {
+    return dividir(a,b)
+  } else
+  return console.log ("Não é uma operação")
 }
 
 // TODO:
